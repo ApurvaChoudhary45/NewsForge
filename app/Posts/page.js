@@ -164,7 +164,7 @@ const Page = () => {
                                         </div>
 
                                         <div className="hover:text-blue-600 cursor-pointer">
-                                            <FiBookmark />
+                                            <FiBookmark className='bg-red-500' />
                                         </div>
                                     </div>
 
