@@ -120,7 +120,7 @@ const Mainpage = () => {
                     })}
 
                 </div>}
-                {profile && <div className="fixed right-3 w-60 bg-white border border-gray-200 rounded-lg shadow-lg z-50 mt-20">
+                {profile && <div className="fixed right-4 w-60 bg-white border border-gray-200 rounded-lg shadow-lg z-50 mt-20">
                     <div className="p-4">
 
 
