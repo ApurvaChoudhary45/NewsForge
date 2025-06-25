@@ -9,7 +9,7 @@ import { FiPlus } from 'react-icons/fi'
 import { useSession, signOut } from "next-auth/react"
 import { toggleMode } from '@/Redux/Dark/dark'
 import { useSelector, useDispatch } from 'react-redux'
-const page = () => {
+const Page = () => {
     const [profile, setprofile] = useState(false)
     const darkMode = useSelector(state => state.darker.mode)
     let menu = ['Posts', 'Liked', 'Saved']
@@ -175,4 +175,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
