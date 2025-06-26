@@ -127,7 +127,7 @@ const Post = () => {
     const fetched = async () => {
       setloading(true)
       try {
-        const getCards = await fetch(`https://newsapi.org/v2/everything?q=${feat}&pageSize=${pageSize}&page=${page}&apiKey=9bd6da6cba1b4fe4b531fb69245f2d55`)
+        const getCards = await fetch(`https://newsapi.org/v2/top-headlines?q=${feat}&pageSize=${pageSize}&page=${page}&apiKey=9bd6da6cba1b4fe4b531fb69245f2d55`)
         const saveCards = await getCards.json()
         if (page == 1) {
           dispatch(getPosts(saveCards?.articles))
