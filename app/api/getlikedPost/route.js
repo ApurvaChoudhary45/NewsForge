@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { MongoClient } from 'mongodb'
 const URI = process.env.MONGO_URI
 const client = new MongoClient(URI)
+
 export async function GET() {
     try {
         await client.connect()
