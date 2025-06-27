@@ -20,6 +20,7 @@ const Post = () => {
   const [loading, setloading] = useState(false)
   const [page, setpage] = useState(1)
   const pageSize = 10
+  const NEWS_API_KEY = process.env.NEXT_PUBLIC_NEWS_API_KEY;
   const [formData, setFormData] = useState({
     title: '',
     author: '',
